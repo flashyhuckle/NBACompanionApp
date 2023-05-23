@@ -99,11 +99,11 @@
 		A46D1DCD2A1D62A80016EB35 /* NBACompanionApp */ = {
 			isa = PBXGroup;
 			children = (
+				A46D1DFE2A1D6CB40016EB35 /* Assets */,
 				A46D1DCE2A1D62A80016EB35 /* AppDelegate.swift */,
 				A46D1DD02A1D62A80016EB35 /* SceneDelegate.swift */,
 				A46D1DD22A1D62A80016EB35 /* ViewController.swift */,
 				A46D1DD42A1D62A80016EB35 /* Main.storyboard */,
-				A46D1DD72A1D62A90016EB35 /* Assets.xcassets */,
 				A46D1DD92A1D62A90016EB35 /* LaunchScreen.storyboard */,
 				A46D1DDC2A1D62A90016EB35 /* Info.plist */,
 			);
@@ -125,6 +125,14 @@
 				A46D1DF12A1D62AA0016EB35 /* NBACompanionAppUITestsLaunchTests.swift */,
 			);
 			path = NBACompanionAppUITests;
+			sourceTree = "<group>";
+		};
+		A46D1DFE2A1D6CB40016EB35 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A46D1DD72A1D62A90016EB35 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
