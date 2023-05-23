@@ -76,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B4F0F092A1D6E2F0096DE94 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				A46D1DDC2A1D62A90016EB35 /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
 		A46D1DC22A1D62A80016EB35 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +107,13 @@
 		A46D1DCD2A1D62A80016EB35 /* NBACompanionApp */ = {
 			isa = PBXGroup;
 			children = (
+				2B4F0F092A1D6E2F0096DE94 /* Plist */,
 				A46D1DFE2A1D6CB40016EB35 /* Assets */,
 				A46D1DCE2A1D62A80016EB35 /* AppDelegate.swift */,
 				A46D1DD02A1D62A80016EB35 /* SceneDelegate.swift */,
 				A46D1DD22A1D62A80016EB35 /* ViewController.swift */,
 				A46D1DD42A1D62A80016EB35 /* Main.storyboard */,
 				A46D1DD92A1D62A90016EB35 /* LaunchScreen.storyboard */,
-				A46D1DDC2A1D62A90016EB35 /* Info.plist */,
 			);
 			path = NBACompanionApp;
 			sourceTree = "<group>";
