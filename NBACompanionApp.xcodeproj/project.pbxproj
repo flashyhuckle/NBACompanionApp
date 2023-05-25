@@ -10,12 +10,12 @@
 		A46D1DCF2A1D62A80016EB35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D1DCE2A1D62A80016EB35 /* AppDelegate.swift */; };
 		A46D1DD12A1D62A80016EB35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D1DD02A1D62A80016EB35 /* SceneDelegate.swift */; };
 		A46D1DD32A1D62A80016EB35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D1DD22A1D62A80016EB35 /* ViewController.swift */; };
-		A46D1DD62A1D62A80016EB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46D1DD42A1D62A80016EB35 /* Main.storyboard */; };
 		A46D1DD82A1D62A90016EB35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46D1DD72A1D62A90016EB35 /* Assets.xcassets */; };
 		A46D1DDB2A1D62A90016EB35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46D1DD92A1D62A90016EB35 /* LaunchScreen.storyboard */; };
 		A46D1DE62A1D62AA0016EB35 /* NBACompanionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D1DE52A1D62AA0016EB35 /* NBACompanionAppTests.swift */; };
 		A46D1DF02A1D62AA0016EB35 /* NBACompanionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D1DEF2A1D62AA0016EB35 /* NBACompanionAppUITests.swift */; };
 		A46D1DF22A1D62AA0016EB35 /* NBACompanionAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D1DF12A1D62AA0016EB35 /* NBACompanionAppUITestsLaunchTests.swift */; };
+		A4896D552A1FD5EF0083A66D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4896D542A1FD5EF0083A66D /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		A46D1DCE2A1D62A80016EB35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A46D1DD02A1D62A80016EB35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A46D1DD22A1D62A80016EB35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A46D1DD52A1D62A80016EB35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A46D1DD72A1D62A90016EB35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A46D1DDA2A1D62A90016EB35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A46D1DDC2A1D62A90016EB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		A46D1DEB2A1D62AA0016EB35 /* NBACompanionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBACompanionAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46D1DEF2A1D62AA0016EB35 /* NBACompanionAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBACompanionAppUITests.swift; sourceTree = "<group>"; };
 		A46D1DF12A1D62AA0016EB35 /* NBACompanionAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBACompanionAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A4896D542A1FD5EF0083A66D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +111,8 @@
 				A46D1DFE2A1D6CB40016EB35 /* Assets */,
 				A46D1DCE2A1D62A80016EB35 /* AppDelegate.swift */,
 				A46D1DD02A1D62A80016EB35 /* SceneDelegate.swift */,
+				A4896D542A1FD5EF0083A66D /* APIManager.swift */,
 				A46D1DD22A1D62A80016EB35 /* ViewController.swift */,
-				A46D1DD42A1D62A80016EB35 /* Main.storyboard */,
 				A46D1DD92A1D62A90016EB35 /* LaunchScreen.storyboard */,
 			);
 			path = NBACompanionApp;
@@ -249,7 +249,6 @@
 			files = (
 				A46D1DDB2A1D62A90016EB35 /* LaunchScreen.storyboard in Resources */,
 				A46D1DD82A1D62A90016EB35 /* Assets.xcassets in Resources */,
-				A46D1DD62A1D62A80016EB35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4896D552A1FD5EF0083A66D /* APIManager.swift in Sources */,
 				A46D1DD32A1D62A80016EB35 /* ViewController.swift in Sources */,
 				A46D1DCF2A1D62A80016EB35 /* AppDelegate.swift in Sources */,
 				A46D1DD12A1D62A80016EB35 /* SceneDelegate.swift in Sources */,
@@ -313,14 +313,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A46D1DD42A1D62A80016EB35 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A46D1DD52A1D62A80016EB35 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A46D1DD92A1D62A90016EB35 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -454,10 +446,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NBACompanionApp/Info.plist;
+				INFOPLIST_FILE = NBACompanionApp/Plist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -481,10 +472,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NBACompanionApp/Info.plist;
+				INFOPLIST_FILE = NBACompanionApp/Plist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
