@@ -7,16 +7,28 @@
 
 import Foundation
 
+struct TeamsResponse: Decodable {
+    let response: [Team]
+    
+    struct Team: Decodable {
+        let name: String
+    }
+}
+
+
 struct APIManager {
     
     func performRequest() {
         
         let headers = [
-            "X-RapidAPI-Key": "7ab61f3e56mshc11bba9e2a6cc0ap187439jsn0ad3ffa31232",
-            "X-RapidAPI-Host": "api-nba-v1.p.rapidapi.com"
+            "X-RapidAPI-Key": "7073e271b18148bcceefe78cd090ed28",
+            "X-RapidAPI-Host": "v1.basketball.api-sports.io"
         ]
         
-        let request = NSMutableURLRequest(url: NSURL(string: "https://api-nba-v1.p.rapidapi.com/seasons")! as URL,
+        let urlStringID = "https://v1.basketball.api-sports.io/teams?id=139"
+        let urlStringConference = "https://v1.basketball.api-sports.io/teams?conference=East"
+        
+        let request = NSMutableURLRequest(url: NSURL(string: urlStringID)! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
                                           timeoutInterval: 10.0)
         request.httpMethod = "GET"
@@ -28,7 +40,14 @@ struct APIManager {
                 print(error as Any)
             } else {
                 let httpResponse = response as? HTTPURLResponse
-                print(httpResponse)
+//                print(httpResponse)
+                do {
+                    let decodedData = try JSONDecoder().decode(TeamsResponse.self, from: data!)
+                    print(decodedData.response.count)
+                    print(decodedData)
+                } catch {
+                    
+                }
             }
         })
         
